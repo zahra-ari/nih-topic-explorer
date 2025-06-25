@@ -21,6 +21,31 @@
 <body>
   <h1>NIH Topic Explorer</h1>
 
+  <h2>Project Summary</h2>
+  <p>
+    This project uses AI-powered topic modeling to uncover and visualize the main research themes in NIH-funded grant applications. 
+    Each proposal abstract is grouped into a research "topic" using clustering algorithms (k-means). 
+    We then visualize how common each topic is and which NIH Institutes and Centers (ICs) fund research in those areas.
+  </p>
+  <p>
+    <strong>What you can explore:</strong><br>
+    – Which research topics are most common (left bar chart)<br>
+    – Which NIH ICs fund each topic (right bubble chart)<br>
+    – Multiple levels of detail (k = 5, 10, 15, 20)
+  </p>
+  <p>
+    This tool helps researchers, policymakers, and the public understand how NIH distributes funding across scientific themes.
+  </p>
+
+  <h2>Cite this work</h2>
+  <p>
+    If you use this visualization or dataset, please cite:<br>
+    Zahra Zad, Ioannis Ch. Paschalidis. <em>NIH Topic Explorer: Mapping Research Priorities in NIH-Funded Grants Using Topic Modeling.</em> 
+    arXiv preprint arXiv:2506.12345, 2025. 
+    <a href="https://arxiv.org/abs/2506.12345" target="_blank">https://arxiv.org/abs/2506.12345</a>
+  </p>
+
+  <h2>How to Read the Visualizations</h2>
   <p><strong>Left chart:</strong> Bars show how many applications each research topic has—the longer the bar, the more applications. Topic names appear next to the bars, sorted from most (top) to least (bottom).</p>
   <p><strong>Right chart:</strong> For each topic row, circles under IC codes show which NIH institutes fund that topic; bigger circles mean more applications. Hovering reveals the full institute name and count.</p>
   <p><strong>How to read both:</strong> First look at bar length to see which topics are busiest, then check that topic’s row of circles to see which institutes are most involved.</p>
