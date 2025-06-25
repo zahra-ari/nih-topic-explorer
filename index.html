@@ -1,64 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NIH Topic Explorer</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: none;
-      width: 100%;
-      margin: 0;
-      padding: 20px;
+      margin: 2rem;
+      max-width: 95%;
     }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      max-width: 1000px;
-      line-height: 1.5;
-    }
-
-    .chart-container {
-      overflow-x: auto;
-      padding-top: 20px;
-    }
-
     iframe {
       width: 100%;
-      max-width: 2000px;
-      height: 900px;
-      display: block;
-      margin: 0 auto;
+      height: 800px;
       border: none;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 10px;
-      font-weight: bold;
+      margin-bottom: 60px;
     }
   </style>
 </head>
 <body>
-
   <h1>NIH Topic Explorer</h1>
 
   <p><strong>Left chart:</strong> Bars show how many applications each research topic has—the longer the bar, the more applications. Topic names appear next to the bars, sorted from most (top) to least (bottom).</p>
   <p><strong>Right chart:</strong> For each topic row, circles under IC codes show which NIH institutes fund that topic; bigger circles mean more applications. Hovering reveals the full institute name and count.</p>
   <p><strong>How to read both:</strong> First look at bar length to see which topics are busiest, then check that topic’s row of circles to see which institutes are most involved.</p>
 
-  <a href="nih_topic_explorer_dataset_summary.csv" download>📥 Download the dataset (CSV)</a>
+  <p>📥 <a href="nih_topic_explorer_dataset_summary.csv" download>Download the dataset (CSV)</a></p>
 
-  <div class="chart-container">
-    <iframe src="applications_by_topic_ic.html">
-      Your browser doesn't support iframes. 
-      <a href="applications_by_topic_ic.html">Click to open chart</a>.
-    </iframe>
-  </div>
+  <h2>Topics with k = 5</h2>
+  <iframe src="5_applications_by_topic_ic.html"></iframe>
 
+  <h2>Topics with k = 10</h2>
+  <iframe src="10_applications_by_topic_ic.html"></iframe>
+
+  <h2>Topics with k = 15</h2>
+  <iframe src="15_applications_by_topic_ic.html"></iframe>
+
+  <h2>Topics with k = 20</h2>
+  <iframe src="20_applications_by_topic_ic.html"></iframe>
 </body>
 </html>
