@@ -5,23 +5,41 @@
   <title>NIH Topic Explorer</title>
   <style>
     body {
-      font-family: sans-serif;
-      margin: 40px;
-      max-width: 1000px;
+      font-family: Arial, sans-serif;
+      max-width: none;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
     }
+
     h1 {
-      font-size: 24px;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
+
+    p {
+      max-width: 1000px;
+      line-height: 1.5;
+    }
+
     .chart-container {
-      height: 800px;
-      margin-bottom: 40px;
+      overflow-x: auto;
+      padding-top: 20px;
     }
-    .description {
-      margin-bottom: 20px;
+
+    iframe {
+      width: 100%;
+      max-width: 2000px;
+      height: 900px;
+      display: block;
+      margin: 0 auto;
+      border: none;
     }
-    .download-link {
+
+    a {
+      display: inline-block;
       margin-top: 10px;
-      margin-bottom: 30px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -29,28 +47,18 @@
 
   <h1>NIH Topic Explorer</h1>
 
-  <div class="description">
-    <p><strong>Left chart:</strong> Bars show how many applications each research topic has—the longer the bar, the more applications. Topic names appear next to the bars, sorted from most (top) to least (bottom).</p>
-    <p><strong>Right chart:</strong> For each topic row, circles under IC codes show which NIH institutes fund that topic; bigger circles mean more applications. Hovering reveals the full institute name and count.</p>
-    <p><strong>How to read both:</strong> First look at bar length to see which topics are busiest, then check that topic’s row of circles to see which institutes are most involved.</p>
-  </div>
+  <p><strong>Left chart:</strong> Bars show how many applications each research topic has—the longer the bar, the more applications. Topic names appear next to the bars, sorted from most (top) to least (bottom).</p>
+  <p><strong>Right chart:</strong> For each topic row, circles under IC codes show which NIH institutes fund that topic; bigger circles mean more applications. Hovering reveals the full institute name and count.</p>
+  <p><strong>How to read both:</strong> First look at bar length to see which topics are busiest, then check that topic’s row of circles to see which institutes are most involved.</p>
 
-  <div class="download-link">
-    <a href="nih_topic_explorer_dataset_summary.csv" download>
-      📥 Download the dataset (CSV)
-    </a>
-  </div>
+  <a href="nih_topic_explorer_final_dataset_kmeans_summary.csv" download>📥 Download the dataset (CSV)</a>
 
-  <div style="overflow-x: auto; width: 100%;">
-    <iframe src="applications_by_topic_ic.html" width="2000" height="900" style="border: none;">
-      Your browser doesn't support iframes.
+  <div class="chart-container">
+    <iframe src="applications_by_topic_ic.html">
+      Your browser doesn't support iframes. 
       <a href="applications_by_topic_ic.html">Click to open chart</a>.
     </iframe>
   </div>
-
-  <footer>
-    <p>Last updated: 2025-06-24</p>
-  </footer>
 
 </body>
 </html>
