@@ -18,7 +18,7 @@ Visit the project site:
 
 If you use this tool or dataset, please cite:
 
-> Zahra Zad, Ioannis Ch. Paschalidis. *NIH Topic Explorer: Mapping Research Priorities in NIH-Funded Grants Using Topic Modeling.* arXiv preprint arXiv:2506.12345, 2025.  
+>(Replace following with actual info-->) Paula Fearon. *NIH Topic Explorer: Mapping Research Priorities in NIH-Funded Grants Using Topic Modeling.* arXiv preprint arXiv:2506.12345, 2025.  
 > [https://arxiv.org/abs/2506.12345](https://arxiv.org/abs/2506.12345)
 
 ## 📁 Files
